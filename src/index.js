@@ -39,11 +39,8 @@ module.exports = app;
 
 // Start the server and connect the mongodb database
 connectionDB()
-  .then(() => {
-    app.listen(PORT, function () {
-      console.log(`********** Server is start :- ${PORT} **********`);
-    });
-  })
-  .catch((err) => {
-    console.log("Error to start server :- ", err.message);
-  });
+
+app.listen(PORT, function () {
+  console.log(`********** Server is start :- ${PORT} **********`);
+});
+
