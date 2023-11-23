@@ -35,12 +35,12 @@ app.use("/signup", signupRoute);
 app.use("/login", loginRoute);
 app.use("/about", aboutRoute);
 
-module.exports = app;
-
 // Start the server and connect the mongodb database
-connectionDB()
+// connectionDB()
 
 app.listen(PORT, function () {
   console.log(`********** Server is start :- ${PORT} **********`);
 });
+
+
 
